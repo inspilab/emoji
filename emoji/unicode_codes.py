@@ -6,7 +6,8 @@ Data literal storing emoji names and unicode codes
 """
 
 
-__all__ = ['EMOJI_UNICODE', 'UNICODE_EMOJI', 'EMOJI_ALIAS_UNICODE', 'UNICODE_EMOJI_ALIAS']
+__all__ = ['EMOJI_UNICODE', 'UNICODE_EMOJI',
+           'EMOJI_ALIAS_UNICODE', 'UNICODE_EMOJI_ALIAS']
 
 
 EMOJI_UNICODE = {
@@ -2398,6 +2399,27 @@ EMOJI_UNICODE = {
     u':zipper-mouth_face:': u'\U0001F910',
     u':zzz:': u'\U0001F4A4',
     u':Åland_Islands:': u'\U0001F1E6\U0001F1FD',
+    u':gach:': u'<img src="https://vozforums.com/images/smilies/brick.png"'
+                ' id="smilie_265" alt=":gach:" title="Brick">',
+    u':sweat:': u'<img src="https://vozforums.com/images/smilies/Off/sweat.gif" id="smilie_242" alt=":sweat:" title="Sweat">',
+    u':go:': u'<img src="https://vozforums.com/images/smilies/Off/go.gif" id="smilie_184" alt=":go:" title="Go">',
+    u':canny:': u'<img src="https://vozforums.com/images/smilies/Off/canny.gif" id="smilie_236" alt=":canny:" title="Canny">',
+    u':sexy:': u'<img src="https://vozforums.com/images/smilies/Off/sexy_girl.gif" id="smilie_234" alt=":sexy:" title="Sexy Girl">',
+    u':look_down:': u'<img src="https://vozforums.com/images/smilies/Off/look_down.gif" id="smilie_245" alt=":look_down:" title="Look Down">',
+    u':adore:': u'<img src="https://vozforums.com/images/smilies/Off/adore.gif" id="smilie_208" alt=":adore:" title="Adore">',
+    u':beauty:': u'<img src="https://vozforums.com/images/smilies/Off/beauty.gif" id="smilie_224" alt=":beauty:" title="Beauty">',
+    u':surrender:': u'<img src="https://vozforums.com/images/smilies/Off/surrender.gif" id="smilie_193" alt=":surrender:" title="Surrender">',
+    u':dribble:': u'<img src="https://vozforums.com/images/smilies/Off/dribble.gif" id="smilie_235" alt=":dribble:" title="Dribble">',
+    u':oh:': u'<img src="https://vozforums.com/images/smilies/Off/oh.gif" id="smilie_229" alt=":oh:" title="Oh">',
+    u':aboom:': u'<img src="https://vozforums.com/images/smilies/Off/after_boom.gif" id="smilie_231" alt=":aboom:" title="After Boom">',
+    u':shot:': u'<img src="https://vozforums.com/images/smilies/Off/beat_shot.gif" id="smilie_216" alt=":shot:" title="Beat Shot">',
+    u':rap:': u'<img src="https://vozforums.com/images/smilies/Off/rap.gif" id="smilie_255" alt=":rap:" title="Rap">',
+    u':tire:': u'<img src="https://vozforums.com/images/smilies/Off/tire.gif" id="smilie_203" alt=":tire:" title="Tire">',
+    u':brick:': u'<img src="https://vozforums.com/images/smilies/Off/nosebleed.gif" id="smilie_261" alt=":chaymau:" title="Nose Bleedding">',
+    u':hell_boy:': u'<img src="https://vozforums.com/images/smilies/Off/hell_boy.gif" id="smilie_199" alt=":hell_boy:" title="Hell Boy">',
+    u':lmao:': u'<img src="https://vozforums.com/images/smilies/Off/lmao.gif" id="smilie_221" alt=":lmao:" title="LMAO">',
+    u':flame:': u'<img src="https://vozforums.com/images/smilies/Off/flame.gif" id="smilie_226" alt=":flame:" title="Flame">',
+    # TBD
 }
 
 EMOJI_ALIAS_UNICODE = dict(EMOJI_UNICODE.items(), **{
@@ -2725,7 +2747,8 @@ EMOJI_ALIAS_UNICODE = dict(EMOJI_UNICODE.items(), **{
     u':yum:': u'\U0001F60B',
     u':scream:': u'\U0001F631',
     u':kissing_heart:': u'\U0001F618',
-    u':sweat:': u'\U0001F613',
+    # u':sweat:': u'\U0001F613',
+    u':sweat:': u'<img src="https://vozforums.com/images/smilies/Off/sweat.gif" id="smilie_242" alt=":sweat:" title="Sweat">',
     u':face_with_head__bandage:': u'\U0001F915',
     u':triumph:': u'\U0001F624',
     u':mask:': u'\U0001F637',
@@ -3703,7 +3726,8 @@ EMOJI_ALIAS_UNICODE = dict(EMOJI_UNICODE.items(), **{
     u':writing_hand:': u'\U0000270D',
     u':yellow_heart:': u'\U0001F49B',
     u':yin_yang:': u'\U0000262F',
-    u':zipper__mouth_face:': u'\U0001F910'
+    u':zipper__mouth_face:': u'\U0001F910',
+    u':gach:': u'<img src="https://vozforums.com/images/smilies/brick.png" id="smilie_265" alt=":gach:" title="Brick">',
 })
 
 

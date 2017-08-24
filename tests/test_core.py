@@ -63,3 +63,13 @@ def test_demojize_complicated_string():
     emojid = emoji.emojize(constructed)
     destructed = emoji.demojize(emojid)
     assert constructed == destructed, "%s != %s" % (constructed, destructed)
+
+def test_voz_emoticons():
+    testcases = (
+        (':gach:', '<img src="https://vozforums.com/images/smilies/brick.png" id="smilie_265" alt=":gach:" title="Brick">'),
+    )
+
+    for src, expected in testcases:
+        result = emoji.emojize(src)
+
+        assert result == expected
