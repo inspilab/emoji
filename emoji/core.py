@@ -16,7 +16,7 @@ import sys
 from emoji import unicode_codes
 
 
-__all__ = ['emojize', 'demojize', 'get_emoji_regexp','emoji_lis']
+__all__ = ['iconize', 'emojize', 'demojize', 'get_emoji_regexp','emoji_lis']
 
 
 PY2 = sys.version_info[0] is 2
@@ -43,13 +43,27 @@ def emojize(string, use_aliases=False, delimiters=(_DEFAULT_DELIMITER,_DEFAULT_D
     pattern = re.compile(u'(%s[a-zA-Z0-9\+\-_&.ô’Åéãíç()!#*]+%s)' % delimiters)
 
     def replace(match):
-        mg = match.group(1).replace(delimiters[0], _DEFAULT_DELIMITER).replace(delimiters[1], _DEFAULT_DELIMITER)
+        mg = match.group(1).replace(delimiters[0],
+                                    _DEFAULT_DELIMITER
+                                    ).replace(delimiters[1], _DEFAULT_DELIMITER)
+
         if use_aliases:
             return unicode_codes.EMOJI_ALIAS_UNICODE.get(mg, mg)
         else:
             return unicode_codes.EMOJI_UNICODE.get(mg, mg)
 
     return pattern.sub(replace, string)
+
+
+def iconize(string):
+    pattern_2 = re.compile(u'(:D|:\)|\^:\)\^|:\*|:">|-_-|:-s|;\)|:p|:\(\()')
+
+    def replace(match):
+        mg = match.group(1)
+
+        return unicode_codes.EMOJI_UNICODE.get(mg, mg)
+
+    return pattern_2.sub(replace, string)
 
 
 def demojize(string, delimiters=(_DEFAULT_DELIMITER,_DEFAULT_DELIMITER)):

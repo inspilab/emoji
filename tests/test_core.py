@@ -64,12 +64,31 @@ def test_demojize_complicated_string():
     destructed = emoji.demojize(emojid)
     assert constructed == destructed, "%s != %s" % (constructed, destructed)
 
-def test_voz_emoticons():
+def test_voz_emoji():
     testcases = (
         (':gach:', '<img src="https://vozforums.com/images/smilies/brick.png" id="smilie_265" alt=":gach:" title="Brick">'),
     )
 
     for src, expected in testcases:
         result = emoji.emojize(src)
+
+        assert result == expected
+
+def test_voz_icon():
+    testcases = (
+        (':)', '<img src="https://vozforums.com/images/smilies/Off/smile.gif" id="smilie_207" alt=":)" title="Smile">'),
+        (':D', '<img src="https://vozforums.com/images/smilies/Off/big_smile.gif" id="smilie_213" alt=":D" title="Big Smile">'),
+        ('^:)^', '<img src="https://vozforums.com/images/smilies/Off/lay.gif" id="smilie_218" alt="^:)^" title="Bow">'),
+        (':((', '<img src="https://vozforums.com/images/smilies/Off/cry.gif" id="smilie_197" alt=":((" title="Cry">'),
+        (':p', '<img src="https://vozforums.com/images/smilies/tongue.gif" id="smilie_5" alt=":p" title="Stick Out Tongue">'),
+        (';)', '<img src="https://vozforums.com/images/smilies/wink.gif" id="smilie_4" alt=";)" title="Wink">'),
+        (':-s', '<img src="https://vozforums.com/images/smilies/Off/confuse.gif" id="smilie_217" alt=":-s" title="Confuse">'),
+        ('-_-', '<img src="https://vozforums.com/images/smilies/Off/sleep.gif" id="smilie_228" alt="-_-" title="Sleep">'),
+        (':">', '<img src="https://vozforums.com/images/smilies/Off/embarrassed.gif" id="smilie_248" alt=":&quot;>" title="Embarrassed">'),
+        (':*', '<img src="https://vozforums.com/images/smilies/Off/sweet_kiss.gif" id="smilie_206" alt=":*" title="Sweet Kiss">'),
+    )
+
+    for src, expected in testcases:
+        result = emoji.iconize(src)
 
         assert result == expected
