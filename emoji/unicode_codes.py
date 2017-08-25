@@ -2496,6 +2496,7 @@ EMOJI_UNICODE = {
     u':)': u'<img src="https://vozforums.com/images/smilies/Off/smile.gif" id="smilie_207" alt=":)" title="Smile">',
     u':*': u'<img src="https://vozforums.com/images/smilies/Off/sweet_kiss.gif" id="smilie_206" alt=":*" title="Sweet Kiss">',
     u':">': u'<img src="https://vozforums.com/images/smilies/Off/embarrassed.gif" id="smilie_248" alt=":&quot;>" title="Embarrassed">',
+    u':&quot;&gt;': u'<img src="https://vozforums.com/images/smilies/Off/embarrassed.gif" id="smilie_248" alt=":&quot;>" title="Embarrassed">',
     u'-_-': u'<img src="https://vozforums.com/images/smilies/Off/sleep.gif" id="smilie_228" alt="-_-" title="Sleep">',
     u':-s': u'<img src="https://vozforums.com/images/smilies/Off/confuse.gif" id="smilie_217" alt=":-s" title="Confuse">',
     u';)': u'<img src="https://vozforums.com/images/smilies/wink.gif" id="smilie_4" alt=";)" title="Wink">',
