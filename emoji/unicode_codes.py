@@ -2422,6 +2422,7 @@ EMOJI_UNICODE = {
     u':sure:': u'<img src="https://vozforums.com/images/smilies/Off/sure.gif" id="smilie_241" alt=":sure:" title="Sure">',
     u':fix:': u'<img src="https://vozforums.com/images/smilies/Off/fix.gif" id="smilie_238" alt=":fix:" title="Fix">',
     u':sad:': u'<img src="https://vozforums.com/images/smilies/Off/sad.gif" id="smilie_227" alt=":sad:" title="Sad">',
+    u':sosad:': u'<img src="https://vozforums.com/images/smilies/Off/too_sad.gif" id="smilie_214" alt=":sosad:" title="Too Sad">',
     u':what:': u'<img src="https://vozforums.com/images/smilies/Off/what.gif" id="smilie_240" alt=":what:" title="What">',
     u':choler:': u'<img src="https://vozforums.com/images/smilies/Off/choler.gif" id="smilie_185" alt=":choler:" title="Choler">',
     u':capture:': u'<img src="https://vozforums.com/images/smilies/Off/capture.gif" id="smilie_196" alt=":capture:" title="Capture">',
