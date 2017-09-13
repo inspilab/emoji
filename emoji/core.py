@@ -56,7 +56,7 @@ def emojize(string, use_aliases=False, delimiters=(_DEFAULT_DELIMITER,_DEFAULT_D
 
 
 def iconize(string):
-    pattern_2 = re.compile(u'(:D|:\)|\^:\)\^|:\*|:">|:&quot;&gt;|-_-|:-s|;\)|:p|:\(\()')
+    pattern_2 = re.compile(r'(:D(?![a-zA-Z])|:\)|\^:\)\^|:\*|:">|:&quot;&gt;|-_-|:-s|;\)|:p(?![a-zA-Z])|:\(\()')
 
     def replace(match):
         mg = match.group(1)

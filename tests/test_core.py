@@ -78,9 +78,11 @@ def test_voz_icon():
     testcases = (
         (':)', '<img src="https://vozforums.com/images/smilies/Off/smile.gif" id="smilie_207" alt=":)" title="Smile">'),
         (':D', '<img src="https://vozforums.com/images/smilies/Off/big_smile.gif" id="smilie_213" alt=":D" title="Big Smile">'),
+        (':Denmark:', ':Denmark:'),
         ('^:)^', '<img src="https://vozforums.com/images/smilies/Off/lay.gif" id="smilie_218" alt="^:)^" title="Bow">'),
         (':((', '<img src="https://vozforums.com/images/smilies/Off/cry.gif" id="smilie_197" alt=":((" title="Cry">'),
         (':p', '<img src="https://vozforums.com/images/smilies/tongue.gif" id="smilie_5" alt=":p" title="Stick Out Tongue">'),
+        (':puke:', ':puke:'),
         (';)', '<img src="https://vozforums.com/images/smilies/wink.gif" id="smilie_4" alt=";)" title="Wink">'),
         (':-s', '<img src="https://vozforums.com/images/smilies/Off/confuse.gif" id="smilie_217" alt=":-s" title="Confuse">'),
         ('-_-', '<img src="https://vozforums.com/images/smilies/Off/sleep.gif" id="smilie_228" alt="-_-" title="Sleep">'),
