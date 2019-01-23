@@ -2400,10 +2400,9 @@ EMOJI_UNICODE = {
     u':zipper-mouth_face:': u'\U0001F910',
     u':zzz:': u'\U0001F4A4',
     u':Åland_Islands:': u'\U0001F1E6\U0001F1FD',
-    u':gach:': u'<img class="voz_smiley_es" src="https://s3-ap-southeast-1.amazonaws.com/voz-media/images/smilies/brick.png"'
-                ' id="smilie_265" alt=":gach:" title="Brick">',
+
     u':sweat:': u'<img class="voz_smiley_es" src="https://s3-ap-southeast-1.amazonaws.com/voz-media/images/smilies/sweat.png" id="smilie_242" alt=":sweat:" title="Sweat">',
-    u':go:': u'<img class="voz_smiley" src="https://s3-ap-southeast-1.amazonaws.com/voz-media/images/smilies/go.png" id="smilie_184" alt=":go:" title="Go">',
+    u':go:': u'<img class="voz_smiley_es" src="https://s3-ap-southeast-1.amazonaws.com/voz-media/images/smilies/go.png" id="smilie_184" alt=":go:" title="Go">',
     u':canny:': u'<img class="voz_smiley_es" src="https://s3-ap-southeast-1.amazonaws.com/voz-media/images/smilies/canny.png" id="smilie_236" alt=":canny:" title="Canny">',
     u':sexy:': u'<img class="voz_smiley_es" src="https://s3-ap-southeast-1.amazonaws.com/voz-media/images/smilies/sexy.png" id="smilie_234" alt=":sexy:" title="Sexy Girl">',
     u':look_down:': u'<img class="voz_smiley_es" src="https://s3-ap-southeast-1.amazonaws.com/voz-media/images/smilies/look_down.png" id="smilie_245" alt=":look_down:" title="Look Down">',
@@ -3905,7 +3904,7 @@ EMOJI_ALIAS_UNICODE = dict(EMOJI_UNICODE.items(), **{
     u':yellow_heart:': u'\U0001F49B',
     u':yin_yang:': u'\U0000262F',
     u':zipper__mouth_face:': u'\U0001F910',
-    u':gach:': u'<img class="voz_smiley_es" src="https://s3-ap-southeast-1.amazonaws.com/voz-media/images/smilies/brick.png" id="smilie_265" alt=":gach:" title="Brick">',
+    u':gach:': u'<img class="voz_smiley_es" src="https://s3-ap-southeast-1.amazonaws.com/voz-media/images/smilies/gach.png" id="smilie_265" alt=":gach:" title="Gach">',
 })
 
 
