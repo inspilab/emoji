@@ -39,7 +39,7 @@ def emojize(string, use_aliases=False, delimiters=(_DEFAULT_DELIMITER,_DEFAULT_D
         >>> print(emoji.emojize("Python is fun __thumbs_up_sign__", delimiters = ("__", "__")))
         Python is fun 👍
     """
- 
+
     pattern = re.compile(u'(%s[a-zA-Z0-9\+\-_&.ô’Åéãíç()!#*]+%s)' % delimiters)
 
     def replace(match):
@@ -51,6 +51,20 @@ def emojize(string, use_aliases=False, delimiters=(_DEFAULT_DELIMITER,_DEFAULT_D
             return unicode_codes.EMOJI_ALIAS_UNICODE.get(mg, mg)
         else:
             return unicode_codes.EMOJI_UNICODE.get(mg, mg)
+
+    return pattern.sub(replace, string)
+
+
+def voz_emojize(string, delimiters=(_DEFAULT_DELIMITER,_DEFAULT_DELIMITER)):
+    """ Replace next emoji names in a string with vozforums bbcode custom tag. """
+
+    pattern = re.compile(u'(%s[a-zA-Z0-9\+\-_&.ô’Åéãíç()!#*]+%s)' % delimiters)
+
+    def replace(match):
+        mg = match.group(1).replace(delimiters[0],
+                                    _DEFAULT_DELIMITER
+                                    ).replace(delimiters[1], _DEFAULT_DELIMITER)
+        return unicode_codes.VOZ_EMOJIS.get(mg, mg)
 
     return pattern.sub(replace, string)
 
