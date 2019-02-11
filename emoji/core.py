@@ -16,7 +16,8 @@ import sys
 from emoji import unicode_codes
 
 
-__all__ = ['iconize', 'emojize', 'demojize', 'get_emoji_regexp','emoji_lis']
+__all__ = ['iconize', 'emojize', 'demojize',
+           'get_emoji_regexp', 'emoji_lis', 'voz_emojize']
 
 
 PY2 = sys.version_info[0] is 2
