@@ -87,7 +87,8 @@ def voz_demojize(string):
     sticker_tag_pattern = re.compile(r'\[nextSticker\](((?!\[).)*)\[\/nextSticker\]')
 
     def replace(match):
-        return match.group(1)
+        return '{delimiter}{code}{delimiter}'.format(
+            delimiter=_DEFAULT_DELIMITER, code=match.group(1))
 
     cooked_string = emoji_tag_pattern.sub(replace, string)
     cooked_string = sticker_tag_pattern.sub(replace, cooked_string)
