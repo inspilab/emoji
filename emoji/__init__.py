@@ -20,6 +20,7 @@ from emoji.core import iconize
 from emoji.core import demojize
 from emoji.core import get_emoji_regexp
 from emoji.core import voz_emojize
+from emoji.core import voz_demojize
 from emoji.unicode_codes import EMOJI_ALIAS_UNICODE
 from emoji.unicode_codes import EMOJI_UNICODE
 from emoji.unicode_codes import UNICODE_EMOJI

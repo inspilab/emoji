@@ -16,7 +16,7 @@ import sys
 from emoji import unicode_codes
 
 
-__all__ = ['iconize', 'emojize', 'demojize',
+__all__ = ['iconize', 'emojize', 'demojize', 'voz_demojize',
            'get_emoji_regexp', 'emoji_lis', 'voz_emojize']
 
 
@@ -24,6 +24,7 @@ PY2 = sys.version_info[0] is 2
 
 _EMOJI_REGEXP = None
 _DEFAULT_DELIMITER = ":"
+
 
 def emojize(string, use_aliases=False, delimiters=(_DEFAULT_DELIMITER,_DEFAULT_DELIMITER)):
 
@@ -81,6 +82,18 @@ def iconize(string):
     return pattern_2.sub(replace, string)
 
 
+def voz_demojize(string):
+    emoji_tag_pattern = re.compile(r'\[nextEmoji\](((?!\[).)*)\[\/nextEmoji\]')
+    sticker_tag_pattern = re.compile(r'\[nextSticker\](((?!\[).)*)\[\/nextSticker\]')
+
+    def replace(match):
+        return match.group(1)
+
+    cooked_string = emoji_tag_pattern.sub(replace, string)
+    cooked_string = sticker_tag_pattern.sub(replace, cooked_string)
+    return cooked_string
+
+
 def demojize(string, delimiters=(_DEFAULT_DELIMITER,_DEFAULT_DELIMITER)):
 
     """Replace unicode emoji in a string with emoji shortcodes. Useful for storage.
@@ -106,8 +119,7 @@ def demojize(string, delimiters=(_DEFAULT_DELIMITER,_DEFAULT_DELIMITER)):
 
 
 def get_emoji_regexp():
-
-    """Returns compiled regular expression that matches emojis defined in
+    """ Returns compiled regular expression that matches emojis defined in
     ``emoji.UNICODE_EMOJI_ALIAS``. The regular expression is only compiled once.
     """
 
